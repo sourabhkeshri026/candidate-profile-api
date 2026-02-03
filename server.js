@@ -236,7 +236,7 @@ apiRouter.get('/search/project/:project', async (req, res) => {
 app.use('/api', apiRouter);
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
   console.log(`📊 Health check: http://localhost:${PORT}/health`);
   console.log(`📝 API Routes: http://localhost:${PORT}/api/profiles`);
